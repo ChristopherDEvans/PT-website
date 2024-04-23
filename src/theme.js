@@ -14,15 +14,18 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: '#1976d2',
+      main: '#0d47a1',  // A strong blue
     },
     secondary: {
-      main: '#ff9800',
+      main: '#c62828',  // A vibrant red
     },
     background: {
-      default: '#424242',
-      paper: '#303030',
+      default: '#fff',  // Light background for most areas
+      paper: '#f5f5f5',  // Light grey background for areas needing contrast
     },
+    info: {
+      main: '#2196f3'  // Bright info color for calls to action
+    }
   },
 });
 

@@ -1,20 +1,21 @@
 import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
+import heroImage from '../assets/gym1.jpg';  // Adjust the path as necessary
+
 
 function Hero() {
     return (
         <Box sx={{
-            height: '100vh',  // Full-screen height
+            height: '100vh',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
-            backgroundImage: 'url("/path-to-your-hero-image.jpg")', // Background image from your assets
+            backgroundImage: `url(${heroImage})`,  // Use the imported image here
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            color: 'common.white', // Using white color for text for better readability
-            textShadow: '1px 1px 8px rgba(0, 0, 0, 0.7)', // Text shadow for better contrast
-            px: 2 // Padding on the sides
+            color: 'common.white',
+            textShadow: '1px 1px 8px rgba(0, 0, 0, 0.7)',
         }}>
             <Typography 
                 variant="h1" 

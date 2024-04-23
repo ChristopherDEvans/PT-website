@@ -8,15 +8,21 @@ function Testimonials() {
     ];
 
     return (
-        <Box sx={{ padding: 4 }}>
-            <Typography variant="h4" gutterBottom>Testimonials</Typography>
-            {testimonials.map((testimonial, index) => (
-                <Paper elevation={3} sx={{ margin: 2, padding: 2 }} key={index}>
-                    <Typography variant="h6">{testimonial.name}</Typography>
-                    <Typography variant="body1">{testimonial.text}</Typography>
-                </Paper>
-            ))}
-        </Box>
+      <Box sx={{ padding: 4 }}>
+      <Typography variant="h4" gutterBottom component="div">
+        Testimonials
+      </Typography>
+      {testimonials.map((testimonial, index) => (
+        <Paper elevation={3} sx={{ margin: 2, padding: 2, backgroundColor: 'background.default' }} key={index}>
+          <Typography variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
+            {testimonial.name}
+          </Typography>
+          <Typography variant="body1">
+            {testimonial.text}
+          </Typography>
+        </Paper>
+      ))}
+    </Box>
     );
 }
 
